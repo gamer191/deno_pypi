@@ -46,7 +46,7 @@ def detect_platform() -> tuple[str, str]:
     arch = platform.machine().lower()
     if arch in {"x86_64", "amd64"}:
         arch = "x86_64"
-    elif arch in {"aarch64", "arm64"}:
+    elif arch in {"aarch64", "arm64"} or system == "ios":
         arch = "aarch64"
     if arch not in supported_arch:
         raise RuntimeError(f"Unsupported architecture: {arch}")
