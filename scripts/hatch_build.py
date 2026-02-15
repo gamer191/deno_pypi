@@ -30,6 +30,7 @@ binary_to_tag = {
 
 SUPPORTED_PLATFORMS = {
     "darwin": ("apple-darwin", {"x86_64", "aarch64"}),
+    "ios": ("apple-darwin", {"x86_64", "aarch64"}),
     "linux": ("unknown-linux-gnu", {"x86_64", "aarch64"}),
     "windows": ("pc-windows-msvc", {"x86_64"}),
 }
